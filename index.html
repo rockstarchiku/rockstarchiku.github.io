@@ -8,21 +8,54 @@
   <title>Portfolio</title>
 </head>
 <body background="http://2.bp.blogspot.com/-Xmo26BMqg5Q/UihlqVwTwgI/AAAAAAAAAv0/V-Rrgm0V6oo/s1600/Top+10+best+Simple+Awesome+Background+Images+for+Your+Website+or+Blog3.jpg">
-<div class="body">
-<h1>Welcome to my world</h1>
-<div id ="wrapper">
-  <div id="content">
-    <nav id="nav">
-      <ul id="nav" class="list">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">About Me</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-<h1>About Me</h1>
-<p>My Name is Joyce Ngamau and I am a Moringa Prep Student.</p>
+  <div class="body">
+    <h1>Welcome to my world</h1>
+    <div id ="wrapper">
+      <div id="content">
+        <nav id="nav">
+          <ul id="unav" class="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
 
-</div>
+        <p>My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style. -Maya Angelou </p>
+        <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hey! My name is Joyce Ngamau</p>
+        <p>I'm a Moringa Prep Student. I love everything ART!!My hobbies include drawing, reading novels, singing in the shower(waiting to be discovered) and watching movies :)</p>
+        <p>I decided to take this class because I was very interested in learning it and believe that it is a basic skill that anyone in IT should know</p>
+        </section>
+
+        <section id="portfolio" class="section">
+        <p>Here is one of the projects I have worked on</p>
+        <p><a href="file:///C:/Users/Joyce/Desktop/cupcake/cake.html">Cupcake Shop</p>
+      </section>
+
+      <section id="contact" class="section">
+      <h2>Contact Details</h2>
+      <p>Not much else to say here. Why not get in touch!</p>
+      <form method="post" action="#">
+        <input type="text" class="basic" placeholder="Name...">
+
+        <input type="text" class="basic" placeholder="E-mail...">
+
+        <textarea class="basictxt"></textarea>
+      </form>
+      </section>
+      </div>
+    </div>
+    </div><!-- @end #content -->
+  </div><!-- @end #w -->
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash);
+  });
+});
+</script>
 </body>
 </html>
