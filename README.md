@@ -4,7 +4,7 @@ This is the _first project_ I have ever done using **Git and GitHub**.
 It is so much fun!!  
 ## Purpose of the project
 Learn how to create a website on Git and push it to a repository.  
-Here's a link to the site (file:///C:/Users/Joyce/Desktop/assignment/rockstarchiku.github.io/index.html)
+Here's a link to the site (https://rockstarchiku.github.io)
 
 ## License
 
