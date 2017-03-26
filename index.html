@@ -2,63 +2,59 @@
 <html>
 <head>
 <meta charset="utf-8"/>
-  <link href="project.css" rel="stylesheet" type="text/css" media="all">
+  <link href="lec.css" rel="stylesheet" type="text/css" media="all">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Handlee">
   <title>Portfolio</title>
 </head>
 <body>
-  <div class="body">
-    <h1>Welcome to my world</h1>
-    <div id ="wrapper">
-      <div id="content">
-        <nav id="nav">
-          <ul id="unav" class="list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <p>My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style. -Maya Angelou </p>
-        <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>Hey! My name is Joyce Ngamau</p>
-        <p>I'm a Moringa Prep Student. I love everything ART!!My hobbies include drawing, reading novels, singing in the shower(waiting to be discovered) and watching movies :)</p>
-        <p>I decided to take this class because I was very interested in learning it and believe that it is a basic skill that anyone in IT should know</p>
-        </section>
-
-        <section id="portfolio" class="section">
-        <h2>Portfolio</h2>
-        <p>Here is one of the projects I have worked on</p>
-        <p><a href="file:///C:/Users/Joyce/Desktop/cupcake/cake.html"alt="Link to Cupcake Shop webpage"/>Cupcake Shop</p>
-      </section>
-
-      <section id="contact" class="section">
-      <h2>Contact Details</h2>
-      <p>Not much else to say here. Why not get in touch!</p>
-      <form method="post" action="#">
-        <input type="text" class="basic" placeholder="Name...">
-
-        <input type="text" class="basic" placeholder="E-mail...">
-
-        <textarea class="basictxt"></textarea>
-      </form>
-      <div class="button">Button</div>
-      <p>&copy; 2017 Joyce Ngamau</p>
-      </section>
-      </div>
-    </div>
-    </div><!-- @end #content -->
-  </div><!-- @end #w -->
+  <header>
+  <h1>Welcome To My World!</h1>
+</header>
+<nav class="main-nav">
+  <a href="#home">Home</a>
+  <a href="#about">About Me</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#contact">Contact</a>
+</nav>
 <script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash);
-  });
+  var  mn = $(".main-nav");
+    mns = "main-nav-scrolled";
+    hdr = $('header').height();
+
+$(window).scroll(function() {
+  if( $(this).scrollTop() > hdr ) {
+    mn.addClass(mns);
+  } else {
+    mn.removeClass(mns);
+  }
 });
 </script>
+<div class="main">
+  <section id="home" class="section">
+  <h1><img src="http://img07.deviantart.net/0dfc/i/2011/104/a/4/boats___arts_of_leonid_afremov_by_honnzi-d3dyv3z.jpg"style="width:50%; height:50%; margin:0 auto;"alt="Leonid Afremov art"/></h1>
+  <p>My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style. -Maya Angelou </p>
+  </section>
+  <section id="about" class="section">
+  <h2>About Me</h2>
+  <h2><img src="https://afremov.com/image.php?type=P&id=17681"style="width:50%; height:50%; margin:0 auto;"alt="Leonid Afremov art"/></h2>
+  <p>Hey! My name is Joyce Ngamau</p>
+  <p>I'm a Moringa Prep Student. I love everything ART!!My hobbies include drawing, reading novels, singing in the shower(waiting to be discovered) and watching movies :)</p>
+  <p>I decided to take this class because I was very interested in learning it and believe that it is a basic skill that anyone in IT should know</p>
+  </section>
+
+  <section id="portfolio" class="section">
+  <h2>Portfolio</h2>
+  <p>Here is one of the projects I have worked on.</p>
+  <p><a href="file:///C:/Users/Joyce/Desktop/cupcake/cake.html"/>Cupcake Shop</p>
+  <p>It's a basic skeleton website for a Cupcake Shop</p>
+</section>
+<section id="contact" class="section">
+<h2>Contact Me</h2>
+<p>That's all for now if you want to get in touch here are my links</p>
+<p>&copy Joyce Ngamau 2017</p>
+</section>
+</div>
+
 </body>
 </html>
