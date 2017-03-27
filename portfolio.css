@@ -1,0 +1,22 @@
+.best{
+  font-family: 'Handlee', serif;
+  font-size: 150%;
+  text-align: center;
+}
+
+.fancy {
+  font-family: 'Lobster', serif;
+  font-size: 300%;
+  text-align: center;
+}
+.fresh{
+  font-family: 'Lobster', serif;
+  font-size: 200%;
+  font-weight: bold;
+  text-align: center;
+}
+.flashy{
+  font-family:'Handlee', serif;
+  font-size:300%;
+  color:red;
+}
